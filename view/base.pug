@@ -1,0 +1,20 @@
+block variables
+
+doctype html 
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+
+    base(href="/")
+
+    title flema 
+
+    meta(name='description' content='flema')
+    link(rel="stylesheet", href="main.css")
+  body 
+    include ./partials/preloader
+    include ./partials/navigation
+
+    .content#content(data-template=template)
+      block content
